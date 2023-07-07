@@ -1,7 +1,8 @@
 {
     "target": "instance",
-    "zeo_server": "",
-    "zeo_port": "",
-    "zeo_directory": "",
+    "location_log": "",
+    "db_zeo_server": "",
+    "db_filestorage_location": "",
+    "db_blobs_location": "",
     "mounted_dbs": ""
 }
