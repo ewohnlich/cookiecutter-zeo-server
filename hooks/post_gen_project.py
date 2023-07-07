@@ -7,7 +7,7 @@ from pathlib import Path
 
 from cookiecutter.utils import work_in
 
-target = """{{ cookiecutter.target }}"""
+target = """{{ cookiecutter.zeo_target }}"""
 cwd = Path.cwd()
 basedir = cwd.parent
 
