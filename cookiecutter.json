@@ -1,5 +1,5 @@
 {
-    "target": "instance",
+    "zeo_target": "zeo_server",
     "location_clienthome": "{{ cookiecutter.target }}/var",
     "location_log": "{{ cookiecutter.location_clienthome }}/log",
     "db_zeo_server": "",
