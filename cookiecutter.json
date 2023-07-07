@@ -1,6 +1,7 @@
 {
     "target": "instance",
-    "location_log": "",
+    "location_clienthome": "{{ cookiecutter.target }}/var",
+    "location_log": "{{ cookiecutter.location_clienthome }}/log",
     "db_zeo_server": "",
     "db_filestorage_location": "",
     "db_blobs_location": "",
