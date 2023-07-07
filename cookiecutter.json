@@ -1,0 +1,7 @@
+{
+    "target": "instance",
+    "zeo_server": "",
+    "zeo_port": "",
+    "zeo_directory": "",
+    "mounted_dbs": ""
+}
