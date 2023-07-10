@@ -1,6 +1,6 @@
 {
-    "target": "zeo_server",
-    "location_clienthome": "{{ cookiecutter.target }}/var",
+    "zeo_target": "zeo_server",
+    "location_clienthome": "{{ cookiecutter.zeo_target }}/var",
     "location_log": "{{ cookiecutter.location_clienthome }}/log",
     "db_zeo_server": "",
     "db_filestorage_location": "",

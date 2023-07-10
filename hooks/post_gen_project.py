@@ -7,7 +7,7 @@ from pathlib import Path
 
 from cookiecutter.utils import work_in
 
-target = """{{ cookiecutter.target }}"""
+target = """{{ cookiecutter.zeo_target }}"""
 cwd = Path.cwd()
 basedir = cwd.parent
 
@@ -38,4 +38,5 @@ with work_in(basedir):
 with work_in(basedir):
     Path("{{ cookiecutter.location_clienthome }}").mkdir(parents=True, exist_ok=True)
     Path("{{ cookiecutter.location_log }}").mkdir(parents=True, exist_ok=True)
+    Path("{{ cookiecutter.db_filestorage_location }}").mkdir(parents=True, exist_ok=True)
     Path("{{ cookiecutter.db_blobs_location }}").mkdir(parents=True, exist_ok=True)
