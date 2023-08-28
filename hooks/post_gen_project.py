@@ -38,5 +38,8 @@ with work_in(basedir):
 Path("{{ cookiecutter.location_clienthome }}").mkdir(parents=True, exist_ok=True)
 Path("{{ cookiecutter.location_log }}").mkdir(parents=True, exist_ok=True)
 Path("{{ cookiecutter.db_filestorage_location }}").mkdir(parents=True, exist_ok=True)
-print("{{ cookiecutter.db_blobs_location }}")
+for db in '{{ cookiecutter.mounted_dbs }}'.split(','):
+    Path("{{ cookiecutter.db_filestorage_location }}/" + db).mkdir(parents=True, exist_ok=True)
 Path("{{ cookiecutter.db_blobs_location }}").mkdir(parents=True, exist_ok=True)
+for db in '{{ cookiecutter.mounted_dbs }}'.split(','):
+    Path("{{ cookiecutter.db_blobs_location }}/" + db).mkdir(parents=True, exist_ok=True)
