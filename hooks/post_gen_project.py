@@ -42,4 +42,4 @@ for db in '{{ cookiecutter.mounted_dbs }}'.split(','):
     Path("{{ cookiecutter.db_filestorage_location }}/" + db).mkdir(parents=True, exist_ok=True)
 Path("{{ cookiecutter.db_blobs_location }}").mkdir(parents=True, exist_ok=True)
 for db in '{{ cookiecutter.mounted_dbs }}'.split(','):
-    Path("{{ cookiecutter.db_blobs_location }}/" + db).mkdir(parents=True, exist_ok=True)
+    Path("{{ cookiecutter.db_blobs_location }}-" + db).mkdir(parents=True, exist_ok=True)
