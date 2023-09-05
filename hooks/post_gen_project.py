@@ -35,8 +35,9 @@ with work_in(basedir):
                 print(f"Can not replace ABSPATH() in file {infile}")
 
 # post generation step 2: generate directories
-Path("{{ cookiecutter.location_clienthome }}").mkdir(parents=True, exist_ok=True)
-Path("{{ cookiecutter.location_log }}").mkdir(parents=True, exist_ok=True)
+with work_in(basedir):
+    Path("{{ cookiecutter.location_clienthome }}").mkdir(parents=True, exist_ok=True)
+    Path("{{ cookiecutter.location_log }}").mkdir(parents=True, exist_ok=True)
 Path("{{ cookiecutter.db_filestorage_location }}").mkdir(parents=True, exist_ok=True)
 for db in '{{ cookiecutter.mounted_dbs }}'.split(','):
     Path("{{ cookiecutter.db_filestorage_location }}/" + db).mkdir(parents=True, exist_ok=True)
